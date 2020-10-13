@@ -128,7 +128,7 @@ func main() {
 	if constants.Ssl {
 		server.TLSConfig = &tls.Config{
 			MinVersion: tls.VersionTLS12,
-			MaxVersion: tls.VersionTLS13,
+			MaxVersion: tls.VersionTLS12,
 		}
 
 		err = server.ListenAndServeTLS(
